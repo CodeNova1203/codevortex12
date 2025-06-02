@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeNova</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="menu" id="menu">
+            <li onclick="showSection('employes')">Employés</li>
+            <li onclick="showSection('objectifs')">Objectifs</li>
+            <li onclick="showSection('rdv')">Rendez-vous</li>
+            <li onclick="showSection('problemes')">Problèmes</li>
+            <li onclick="showSection('finances')">Finances</li>
+            <li onclick="showSection('creation')">Création</li>
+        </ul>
+    </nav>
+    <main>
+        <section id="accueil">
+            <img src="logo.png" alt="Logo CodeNova" class="logo" />
+            <h1 class="welcome">Bienvenue sur CodeNova</h1>
+            <p class="slogan">Votre code, notre mission.</p>
+        </section>
+        <section id="employes" class="content-section">
+            <h2>Équipe</h2>
+            <table>
+                <tr><th>Nom</th><th>Rôle</th><th>Téléphone</th><th>Adresse</th></tr>
+                <tr><td>Samy Foul</td><td>Manager</td><td>0610463851</td><td>167 rue Marguerite Duras, 59000 Lille</td></tr>
+                <tr><td>Abderahman Baghdaddi</td><td>Sous-manager</td><td>0753641332</td><td>-</td></tr>
+            </table>
+        </section>
+        <section id="objectifs" class="content-section">
+            <h2>Objectif</h2>
+            <p>Permettre aux PME d’optimiser leurs processus via des solutions logicielles modernes.</p>
+        </section>
+        <section id="rdv" class="content-section">
+            <h2>Prendre un rendez-vous</h2>
+            <p>Email : <a href="mailto:codenova.1203@gmail.com">codenova.1203@gmail.com</a></p>
+            <p>Téléphone : <a href="tel:0610463851">0610463851</a></p>
+        </section>
+        <section id="problemes" class="content-section">
+            <h2>Problèmes</h2>
+            <ul>
+                <li><input type="checkbox" /> Site lent</li>
+                <li><input type="checkbox" /> Bug d'affichage</li>
+                <li><input type="checkbox" /> Sécurité faible</li>
+                <li><input type="checkbox" /> Mauvais design</li>
+                <li><input type="checkbox" /> Compatibilité mobile</li>
+                <li><input type="checkbox" /> Intégration API</li>
+                <li><input type="checkbox" /> Erreurs 404</li>
+                <li><input type="checkbox" /> Manque de fonctionnalités</li>
+                <li><input type="checkbox" /> Difficulté de navigation</li>
+                <li><input type="checkbox" /> Mises à jour</li>
+            </ul>
+        </section>
+        <section id="finances" class="content-section">
+            <h2>Finances</h2>
+            <table>
+                <tr><th>Poste</th><th>Montant (€)</th></tr>
+                <tr><td>Salaire employé</td><td>1</td></tr>
+                <tr><td>Salaire entreprise</td><td>15 000</td></tr>
+                <tr><td>Bénéfice patron</td><td>5 993</td></tr>
+            </table>
+        </section>
+        <section id="creation" class="content-section">
+            <h2>Création de l’entreprise</h2>
+            <p>Cette entreprise a été créée par Samy Foul le 1er juin 2025. Sa motivation : son stage, où il a eu l'idée de ces programmes.</p>
+        </section>
+    </main>
+</body>
+</html>
