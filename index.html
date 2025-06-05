@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeNova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00aced;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .logo {
+      width: 180px;
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+    .welcome h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+    }
+    .welcome p {
+      font-size: 1.3em;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00aced;
+    }
+    @media screen and (max-width: 600px) {
+      nav a {
+        font-size: 1em;
+        margin: 8px;
+      }
+      .welcome h1 {
+        font-size: 2.2em;
+      }
+      .welcome p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="accueil">
+    <img src="logo.png" alt="CodeNova Logo" class="logo">
+    <div class="welcome">
+      <h1>Bienvenue chez CodeNova</h1>
+      <p>Là où l'innovation rencontre la technologie. Nous accompagnons les PME dans leur transformation digitale.</p>
+    </div>
+  </header>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>CodeNova est une entreprise innovante spécialisée dans les solutions informatiques modernes pour les petites et moyennes entreprises.</p>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <p>Développement de sites web, optimisation de performance, sécurité, UX design, automatisation des processus et bien plus.</p>
+  </section>
+
+  <section id="equipe">
+    <h2>Notre Équipe</h2>
+    <p>Samy FOUL (Manager), Abderahman Baghdaddi (Sous-manager), tous passionnés par la tech et l'innovation.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:codenova1202@gmail.com" style="color: #00aced;">codenova1202@gmail.com</a></p>
+    <p>Téléphone : 06 10 46 38 51</p>
+    <p>Adresse : 167 rue Marguerite Duras, 59000 Lille</p>
+  </section>
+
+</body>
+</html>
